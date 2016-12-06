@@ -1,0 +1,51 @@
+u1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #2E4053
+}
+
+li {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width: 19%;
+}
+
+.leftblob {
+  float: left;
+  width: 60%;
+  background-color: green;
+}
+
+.righthandblob {
+float: right;
+width: 40%;
+  }
+
+#map {
+  background-color: red;
+  height: 400px;
+}
+
+.photoblob{
+  float: right;
+  width: 50%;
+  background-color: blue;
+}
+
+.articleblob{
+  float: right;
+  width: 50%;
+  background-color: yellow;
+}
+
+.travelblob{
+  background-color: purple;
+}
+
+.randomblob {
+  background-color: brown;
+}
