@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Googly Maps</title>
+  </head>
+
+
+    <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map">
+
+      <script>
+        function initMap() {
+          var Riga = {lat: 57, lng: 24};
+          var Copenhagen = {lat: 55.68, lng: 12.57};
+          var Berlin = {lat: 52.5200, lng: 13.4050};
+          var Barcelona = {lat: 41.3851, lng: 2.1734}
+
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 3,
+            center: Copenhagen
+          });
+
+          var marker = new google.maps.Marker({
+            position: Riga,
+            map: map
+          });
+          var marker = new google.maps.Marker({
+            position: Copenhagen,
+            map: map
+          });
+          var marker = new google.maps.Marker({
+            position: Berlin,
+            map: map
+          });
+          var marker = new google.maps.Marker({
+            position: Barcelona,
+            map: map
+          })
+
+        }
+      </script>
+
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk7noyQ-V78MtSamY_0lMvmxQXtyot_2A&callback=initMap">
+        </script>
+
+    </div>
+
+    <style>
+      #map {
+        width: 50%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+  </body>
+
+</html>
