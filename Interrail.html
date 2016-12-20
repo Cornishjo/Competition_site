@@ -1,0 +1,80 @@
+<html>
+<head>
+<title> greenShoesAbroad </title>
+<link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script src="map.js"></script>
+</head>
+
+<body>
+ <div w3-include-html="header.html"></div>
+
+<div class="leftblob">
+  <h1>The Pros and Cons of Interrail</h1>
+    <p>If you are reading this, you are probably already considering an interrailing adventure and wondering whether it is a sensible idea or not. Hopefully this will give you a small insight into both advantages and disadvantages, and help you make up your mind.</p>
+    <ul><h3>Firstly, the positives… </h3>
+      <li>It’s a fantastic chance to explore! With a ticket to roam on train routes virtually the entire way around Europe, you can travel wherever you like at the drop of your new Spanish sunhat. Wake up in Venice, spend the day in Athens. You can’t do that so easily or cheaply by plane!</li>
+      <li>It’s a chance to try out new things. If you have never visited Germany, grab a Bratwurst from a street-seller. If you have never set foot in an art museum, take the opportunity to wander around the Louvre (free entrance on the last Sunday of each month..). Rainy days are particularly good for visiting a weird museum – in Bergen, Norway, there is a shoe exhibition!</li>
+      <li>It’s an opportunity to meet new people. It sounds cheesy, but sharing a hostel dorm or a 6 hour train to Budapest is a fantastic time to chat to other travellers and share experiences and advice. Remember the French you learnt at school? Bring it out a few phrases in the supermarket; although they will most likely reply in English, they will appreciate the effort.</li>
+      <li>Freebies and offers… Lots of interrail scheme include discounts on ferry crossings, pizzas and other random items. Take advantage of them! The train-ferry between Germany and Denmark (or more specifically, Rødby and Puttgarden) is totally worth it!</li>
+    </ul>
+  <ul><h3>The disadvantages or drawbacks</h3>
+      <li>Don’t expect it to be easy. Yes, it can seem incredibly idyllic at times, but it is still the same world you currently live in, and people are much the same the world over. There will be the unfriendly shopkeeper, bits of bad weather and delayed or cancelled trains. But see those problems as experiences in which to grow – and you can laugh at them later over a pint of German helles!</li>
+      <li>Don’t expect cheap or budget hostels to resemble 5* hotels. Europe is brilliant for cheap travel and virtually every large town will have at least one budget hostel or B&B, but these vary enormously on quality. The cheapest beds are usually in mixed-sex dorms, but private rooms don’t cost much more. Remember to keep valuable possessions (including that all-important interrail pass!) either on your person or in the storage lockers.</li>
+      <li>Don’t expect to see everything. The brilliance of interrail is that you get to travel everywhere and sample a few things from each place. But unless you use up travel days around one city, you won’t see everything. Don’t worry. This is not a disaster – just take photographs or selfies at key locations and leave a few attractions to visit when you next make a holiday!</li>
+      <li>Long journeys are still long journeys. Take an interesting magazine or a book that you won’t cry over if it gets lost or damaged. Take a music player with plenty of music and audiobooks. Ensure that you are friends with your travelling companion/s!</li>
+  </ul>
+</div>
+
+
+<div class="righthandblob" >
+  <div id="map">
+    <script>
+      function initMap() {
+        var Riga = {lat: 57, lng: 24};
+        var Copenhagen = {lat: 55.68, lng: 12.57};
+        var Berlin = {lat: 52.5200, lng: 13.4050};
+        var Barcelona = {lat: 41.3851, lng: 2.1734};
+        var Zagreb = {lat: 45.8150, lng: 15.9819};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: Copenhagen
+        });
+
+        var marker = new google.maps.Marker({
+          position: Riga,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Copenhagen,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Berlin,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Barcelona,
+          map: map
+        })
+        var marker = new google.maps.Marker({
+          position: Zagreb,
+          map: map
+        })
+
+      }
+    </script>
+    <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk7noyQ-V78MtSamY_0lMvmxQXtyot_2A&callback=initMap">
+    </script>
+ </div>
+
+ <div w3-include-html="sidebottom.html"></div>
+
+ <script>
+ w3IncludeHTML();
+ </script>
+
+</body>
+</html>

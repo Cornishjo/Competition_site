@@ -1,0 +1,80 @@
+<html>
+<head>
+<title> greenShoesAbroad </title>
+<link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script src="map.js"></script>
+</head>
+
+<body>
+ <div w3-include-html="header.html"></div>
+
+<div class="leftblob">
+  <h1> Duesseldorf, Germany </h1>
+  <p> To be perfectly honest, Düsseldorf isn’t really intended to be the perfect holiday destination, but it is a good place for a winter weekend break. </p>
+
+  <p> The city itself is large, the capital of the region, and has undergone fairly extensive regeneration post-war and post-industrial era. Thanks to the bombings, there isn’t a huge amount of old ‘Altstadt’ visible beyond the street layouts and a few rebuilt churches, but the seven individual Weihnachtsmärkte formed a chain which naturally led the tourist and resident through the streets and shopping districts.</p>
+
+  <p> Düsseldorf is served internally well by a regular network of trams and the U-bahn, and it is easily reached from the UK. The airport lies half an hour from the city centre, and has connecting flights to London and other regional airports. </p>
+  <img src="/home/Joanne/CodeFirst/Competition_site/img_20151128_151748.jpg" alt="MediaHafen in Duesseldorf" width=200px >
+
+  <h3> Things to do </h3>
+
+  <p> The Rheinturm dominates the skyline and it has a special light clock on the side of it! Quite how useful it actually is remains to be seen; there is an optimal position to stand and count the lights, or they end up merging together.
+  The restaurant at the top of the Rheinturm has fantastic views across the Ruhrpott; lots of factories, lots of chimneys, and the Rhine cutting a broad and squiggly line through the landscape. </p>
+
+  <p> The Mediahafen was described by someone on TripAdvisor as if all the buildings were designed by a drunk architect. It certainly does look a bit bizarre, but it’s interesting to wander around and look at the ships in the port.</p>
+</div>
+
+
+<div class="righthandblob" >
+  <div id="map">
+    <script>
+      function initMap() {
+        var Riga = {lat: 57, lng: 24};
+        var Copenhagen = {lat: 55.68, lng: 12.57};
+        var Berlin = {lat: 52.5200, lng: 13.4050};
+        var Barcelona = {lat: 41.3851, lng: 2.1734};
+        var Zagreb = {lat: 45.8150, lng: 15.9819};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: Copenhagen
+        });
+
+        var marker = new google.maps.Marker({
+          position: Riga,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Copenhagen,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Berlin,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Barcelona,
+          map: map
+        })
+        var marker = new google.maps.Marker({
+          position: Zagreb,
+          map: map
+        })
+
+      }
+    </script>
+    <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk7noyQ-V78MtSamY_0lMvmxQXtyot_2A&callback=initMap">
+    </script>
+ </div>
+
+ <div w3-include-html="sidebottom.html"></div>
+
+ <script>
+ w3IncludeHTML();
+ </script>
+
+</body>
+</html>

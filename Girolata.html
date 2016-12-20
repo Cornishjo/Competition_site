@@ -1,0 +1,80 @@
+<html>
+<head>
+<title> greenShoesAbroad </title>
+<link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script src="map.js"></script>
+</head>
+
+<body>
+ <div w3-include-html="header.html"></div>
+
+<div class="leftblob">
+  <h1> Girolata, Corsica </h1>
+
+  <p>Girolata is a small village nestled in the shelter of the Mediterranean peninsula La Scandola, on the west coast of Corsica close to Porto. Originally a tiny fishing community, it was never joined up to the road network and consequently can only be reached by boat or on foot – it takes about 1,5 hours to walk the 7km to reach Girolata from Col de la Croix on the road between Porto and Calvi. The postman used to walk this route every day to deliver letters and packages! The area has been a UNESCO World Heritage site since 1983, primarily because of the Scandola Nature Reserve and the Genoese fortress on the peninsula. </p>
+  <img src="/home/Joanne/CodeFirst/Competition_site/Girolata picture.jpg" alt="Girolata bay" width=200px>
+  <p>The community has retained a sense of isolation and tradition, despite the large numbers of tourists which flock by boat (and the few by foot) every sunny day. Wandering through the back of the village and exploring after the last boat tour has left leaves one with the feeling that the community has never really caught up with time or history. </p>
+
+  <p>A number of small gites d’étape and B&B are available in the hamlet, along with several shops and a few places to book fishing, snorkelling and boat trips. If staying in the gites, take a bottle of mosquito repellent as they are quite low-lying on the shore and the insects can be a problem.</p>
+
+  <h3>Things to do and see</h3>
+  <ol>
+  <li>The peninsula La Scandola has the remains of an impressive Genoese fortification, built in the early 16th century. From the watchtower, the view of the bay and the natural harbour is incredible.</li>
+  <li>The main attraction of Girolata is its setting; a natural red-rock harbour (often dotted with gleaming white sailing boats!) and the imposing mountains falling down into the sea. The village itself lies at the head of a little beach, and sprawls out across the side of the peninsula.</li>
+  </ol>
+  <p> The cows of Girolata wandering around the beach are just an added extra! </p>
+</div>
+
+
+<div class="righthandblob" >
+  <div id="map">
+    <script>
+      function initMap() {
+        var Riga = {lat: 57, lng: 24};
+        var Copenhagen = {lat: 55.68, lng: 12.57};
+        var Berlin = {lat: 52.5200, lng: 13.4050};
+        var Barcelona = {lat: 41.3851, lng: 2.1734};
+        var Zagreb = {lat: 45.8150, lng: 15.9819};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: Copenhagen
+        });
+
+        var marker = new google.maps.Marker({
+          position: Riga,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Copenhagen,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Berlin,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Barcelona,
+          map: map
+        })
+        var marker = new google.maps.Marker({
+          position: Zagreb,
+          map: map
+        })
+
+      }
+    </script>
+    <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk7noyQ-V78MtSamY_0lMvmxQXtyot_2A&callback=initMap">
+    </script>
+ </div>
+
+ <div w3-include-html="sidebottom.html"></div>
+
+ <script>
+ w3IncludeHTML();
+ </script>
+
+</body>
+</html>
