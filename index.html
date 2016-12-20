@@ -1,31 +1,22 @@
-<!-- it's all chill -->
 <html>
-
 <head>
 <title> greenShoesAbroad </title>
 <link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script src="map.js"></script>
 </head>
 
 <body>
-  <img src="Images/longThinPhoto.png" width=100% >
+ <div w3-include-html="header.html"></div>
 
-  <h1> greenShoesAbroad: the travel guide </h1>
+<div class="leftblob">
+<p> Travelling British linguist hopping across the Channel and exploring… I hope this blog will inspire you to travel to some of the locations and explore the sites which aren't so touristy or over-populated. Read some of my posts to get inspiration for your own trips; be bold, and leave the land of teapots and marmite!</p>
 
-<u1>
-  <li> Front Door </li>
-  <li> Map Drawer </li>
-  <li> Features </li>
-  <li> Blog </li>
-  <li> Postbox </li>
-</u1>
-
-<div class="leftblob" >
-  <br> <p> Travelling British linguist hopping across the Channel and exploring… I hope this blog will inspire you to travel to some of the locations and explore the sites which aren't so touristy or over-populated. Read some of my posts to get inspiration for your own trips; be bold, and leave the land of teapots and marmite!
-
-I’m a languages student at the University of Southampton, and enjoy escaping (sorry, that should read ‘exploring’) lectures and getting myself lost in foreign lands.
+<p>I’m a languages student at the University of Southampton, and enjoy escaping (sorry, that should read ‘exploring’) lectures and getting myself lost in foreign lands.
 I’ve travelled a fair bit, and hoping to do a whole lot more.
 From September 2015 I spent eleven months working in a Christian school in south-west Germany; getting more familiar with the Dreyeckland and the Schwarzwald was rather exciting!b</p> </br>
 </div>
+
 
 <div class="righthandblob" >
   <div id="map">
@@ -65,119 +56,16 @@ From September 2015 I spent eleven months working in a Christian school in south
 
       }
     </script>
-
     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk7noyQ-V78MtSamY_0lMvmxQXtyot_2A&callback=initMap">
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk7noyQ-V78MtSamY_0lMvmxQXtyot_2A&callback=initMap">
     </script>
+ </div>
 
-  </div>
+ <div w3-include-html="sidebottom.html"></div>
 
-  <div class="articleblob" >
-    <p> This is another section which will contain a list of the articles on the website, for readers to peruse, should they want to leisure. </p>
-  </div>
-
-  <div class="photoblob" >
-    <p> This will be an exciting range of photos from the various places around Europe. It may well link through to a gallery of images around the website. </p>
-  </div>
-
-  <div class="travelblob">
-    <p> This section will basically be Rome2Rio! We will be able to instantly see travel times, options and connections from the Location of the viewer to the desired destination. </p>
-  </div>
-
-  <div class="randomblob">
-    <p> This is currently a spare section... I need to find something to put here. </p>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ <script>
+ w3IncludeHTML();
+ </script>
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>

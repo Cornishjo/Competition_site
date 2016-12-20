@@ -1,0 +1,77 @@
+<html>
+<head>
+<title> greenShoesAbroad </title>
+<link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script src="map.js"></script>
+</head>
+
+<body>
+ <div w3-include-html="header.html"></div>
+
+<div class="leftblob">
+  <h1> Calvi, Corsica </h1>
+  <p> Calvi is a historic tourist town on the edge of the Corsican coast, with an impressive citadel fortress and a beautiful promenade lining the Mediterranean. The first settlers here were Neolithic and it has been invaded and incorporated into countless empires, including the Romans and Genoese. The locals are proud of their rich history and their saying ‘souvent conquis, jamais soumis’ (often conquered, never enslaved) reflects this. </p>
+  <p> The town is densely packed with few large roads; the majority are small side-roads and cobbled streets. There is no bus service, but the whole town is easily within walking distance. There is a tourist information at the railway station. </p>
+  <p> It is worth noting that Calvi has one of the greatest presences of the Corsican Mafia out of all the touristy towns; this should not impact your trip at all as they have little interest in tourists (unless you are dealing in huge quantities of money!), but for the sake of ensuring friendly relations with the locals, do avoid referring to Corsica as ‘France’ and don’t mention the national party! </p>
+
+  <h3> Things to do and see </h3>
+  <ol>
+  <li> Chapelle de Notre Dame de la Serre – this is a beautiful chapel up on the mountainside, about an hour from the town. It is possible to drive up to a carpark just beneath it, but the short hike is well worth it for the views. The chapel is often open and there is a brilliant white statue of Mother Eternal gazing out across the bay. </li>
+  <li> Citadel – this is the equivalent of the ‘old town’ for Calvi, with well-preserved medieval buildings looming over the narrow, cobbled streets. There are a few small cafés and shops nearer the bottom, but these disappear as you climb to the top. The views at the top are also excellent, and watching the sunset across the rooftops and battlements is something special. (Note; take a torch with you if you go in the late evening, as the streets are very dark and quite uneven!) </li>
+  <li> Snorkelling, scuba-diving and boat trips – there are many companies offering trips out into the bay. Most tours and trips will feature an English translation, although not all of them.</li>
+  <li> Several boat tours go to Scandola nature reserve or the other seaside settlements of Porto, Girolata and Ajaccio – all of which are certainly worth an exploration! </li>
+</div>
+
+
+<div class="righthandblob" >
+  <div id="map">
+    <script>
+      function initMap() {
+        var Riga = {lat: 57, lng: 24};
+        var Copenhagen = {lat: 55.68, lng: 12.57};
+        var Berlin = {lat: 52.5200, lng: 13.4050};
+        var Barcelona = {lat: 41.3851, lng: 2.1734};
+        var Zagreb = {lat: 45.8150, lng: 15.9819};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: Copenhagen
+        });
+
+        var marker = new google.maps.Marker({
+          position: Riga,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Copenhagen,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Berlin,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Barcelona,
+          map: map
+        })
+        var marker = new google.maps.Marker({
+          position: Zagreb,
+          map: map
+        })
+
+      }
+    </script>
+    <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk7noyQ-V78MtSamY_0lMvmxQXtyot_2A&callback=initMap">
+    </script>
+ </div>
+
+ <div w3-include-html="sidebottom.html"></div>
+
+ <script>
+ w3IncludeHTML();
+ </script>
+
+</body>
+</html>

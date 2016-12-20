@@ -1,0 +1,103 @@
+<html>
+<head>
+<title> greenShoesAbroad </title>
+<link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script src="map.js"></script>
+</head>
+
+<body>
+ <div w3-include-html="header.html"></div>
+
+ <div class="leftblob">
+ <h1> France </h1>
+ <p> The British and French relations are historically a nightmare, with over 1,000 years of battles, treaties and squabbles between us. But it’s the 21st century and we are still neighbours; aside from the baguettes and pain au chocolats, what is France really like? </p>
+
+ <p><u>Paris</u> is undoubtedly the focal point for most holidays, but the south of France is becoming more and more popular as tourists begin to discover the delights of the Ardéche gorges, the stunning Mediterranean coastline and the awesome heights of the Alps and the Pyrenees.</p>
+
+ <p>English is widely understood in France, although the best English –speakers are usually to be found in the younger generations in the cities.</p>
+
+ <p>France is within very easy reach of most places in the UK; flights from virtually every British airport land either in Paris or another city, such as Lyon, Nice or Marseille, and ferries from Dover, Newport and Plymouth (as well as from the Channel Islands and Ireland) sail daily. The Channel Tunnel is also a very quick crossing from Folkestone, lasting just 35 minutes.</p>
+
+ <p><strong>Pages which will be shortly finalised are: </strong></p>
+
+ <h4>Northern France </h4>
+ <ul>
+ <li>Paris</li>
+ <li>Strasbourg</li>
+ <li>Aire Sur la Lys</li>
+ </ul>
+
+ <h4>Central France</h4>
+ <ul>
+ <li>Orange</li>
+ <li>Avignon</li>
+ <li>Lyon</li>
+ </ul>
+
+ <h4>Southern France</h4>
+ <ul>
+ <li>Dijon</li>
+ <li>Marseille</li>
+ </ul>
+
+ <p><strong>The French Alpine regions: </strong></p>
+ <ul>
+ <li>the Queyras</li>
+ <li>the Écrins</li>
+ <li>the Chamonix Alps</li>
+ </ul>
+
+ </div>
+
+<div class="righthandblob" >
+  <div id="map">
+    <script>
+      function initMap() {
+        var Riga = {lat: 57, lng: 24};
+        var Copenhagen = {lat: 55.68, lng: 12.57};
+        var Berlin = {lat: 52.5200, lng: 13.4050};
+        var Barcelona = {lat: 41.3851, lng: 2.1734};
+        var Zagreb = {lat: 45.8150, lng: 15.9819};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: Copenhagen
+        });
+
+        var marker = new google.maps.Marker({
+          position: Riga,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Copenhagen,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Berlin,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Barcelona,
+          map: map
+        })
+        var marker = new google.maps.Marker({
+          position: Zagreb,
+          map: map
+        })
+
+      }
+    </script>
+    <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk7noyQ-V78MtSamY_0lMvmxQXtyot_2A&callback=initMap">
+    </script>
+ </div>
+
+ <div w3-include-html="sidebottom.html"></div>
+
+ <script>
+ w3IncludeHTML();
+ </script>
+
+</body>
+</html>
