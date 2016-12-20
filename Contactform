@@ -10,22 +10,27 @@
  <div w3-include-html="header.html"></div>
 
 <div class="leftblob">
-<form>
-First name:<br>
-<input type="text" name="firstname"><br>
-Surname:<br>
-<input type="text" name="lastname"><br>
 
+<form>
+<p class="Formlabel">First name:</p>
+<input type="text" name="firstname">
+<p class="Formlabel">Surname:</p>
+<input type="text" name="lastname">
+<p class="Formlabel">Email:</p>
+<input type="text" name="emailaddress">
+
+</br></br>
 <input type="radio" name="gender" value="male" checked> Male<br>
 <input type="radio" name="gender" value="female"> Female<br>
 <input type="radio" name="gender" value="other"> Other<br>
 
-Tell us what you think!<br>
-<input type="text" name="comments"><br>
+</br>
+<p class="Formlabel">Tell us what you think!</p>
+<input type="text" name="comments">
 
+</br></br>
 <input type="submit" value="Submit"><br>
-
-<p>Thank-you!</p>
+<p class="Formlabel">Thank-you!</p>
 
 <form action="action_page.php" method="post">
 
