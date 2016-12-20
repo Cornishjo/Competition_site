@@ -6,11 +6,21 @@ Contact form
 </title>
 </head>
 
- First name:<br>
- <input type="text" name="firstname"><br>
- Surname:<br>
- <input type="text" name="lastname">
+First name:<br>
+<input type="text" name="firstname"><br>
+Surname:<br>
+<input type="text" name="lastname"><br>
+
+<input type="radio" name="gender" value="male" checked> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other<br>
 
 
- 
+Tell us what you think!<br>
+<input type="text" name="comments"><br>
+
+<input type="submit" value="Submit"><br>
+
+<p>Thank-you!</p>
+
 </form>
