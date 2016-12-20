@@ -6,17 +6,165 @@
 <link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
 </head>
 
-<body> <!-- bodz cos it's english lol -->
+<body>
   <img src="Images/longThinPhoto.png" width=100% >
 
-  <h1> greenShoesAbroad: the definitive travel guide </h1>
+  <h1> greenShoesAbroad: the travel guide </h1>
+
+<u1>
+  <li> Front Door </li>
+  <li> Map Drawer </li>
+  <li> Features </li>
+  <li> Blog </li>
+  <li> Postbox </li>
+</u1>
+
+<div class="leftblob" >
+  <br> <p> Travelling British linguist hopping across the Channel and exploring… I hope this blog will inspire you to travel to some of the locations and explore the sites which aren't so touristy or over-populated. Read some of my posts to get inspiration for your own trips; be bold, and leave the land of teapots and marmite!
+
+I’m a languages student at the University of Southampton, and enjoy escaping (sorry, that should read ‘exploring’) lectures and getting myself lost in foreign lands.
+I’ve travelled a fair bit, and hoping to do a whole lot more.
+From September 2015 I spent eleven months working in a Christian school in south-west Germany; getting more familiar with the Dreyeckland and the Schwarzwald was rather exciting!b</p> </br>
+</div>
+
+<div class="righthandblob" >
+  <div id="map">
+    <script>
+      function initMap() {
+        var Riga = {lat: 57, lng: 24};
+        var Copenhagen = {lat: 55.68, lng: 12.57};
+        var Berlin = {lat: 52.5200, lng: 13.4050};
+        var Barcelona = {lat: 41.3851, lng: 2.1734};
+        var Zagreb = {lat: 45.8150, lng: 15.9819};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: Copenhagen
+        });
+
+        var marker = new google.maps.Marker({
+          position: Riga,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Copenhagen,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Berlin,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: Barcelona,
+          map: map
+        })
+        var marker = new google.maps.Marker({
+          position: Zagreb,
+          map: map
+        })
+
+      }
+    </script>
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk7noyQ-V78MtSamY_0lMvmxQXtyot_2A&callback=initMap">
+    </script>
+
+  </div>
+
+  <div class="articleblob" >
+    <p> This is another section which will contain a list of the articles on the website, for readers to peruse, should they want to leisure. </p>
+  </div>
+
+  <div class="photoblob" >
+    <p> This will be an exciting range of photos from the various places around Europe. It may well link through to a gallery of images around the website. </p>
+  </div>
+
+  <div class="travelblob">
+    <p> This section will basically be Rome2Rio! We will be able to instantly see travel times, options and connections from the Location of the viewer to the desired destination. </p>
+  </div>
+
+  <div class="randomblob">
+    <p> This is currently a spare section... I need to find something to put here. </p>
+  </div>
+</div>
 
 
-  <p>Basically... Thomas rules - so there is no point travelling unless you take him!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 </body>
+
 
 
 
